@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">CarParkApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login_button">Login</string>
+    <string name="infor_menu">Information</string>
+    <string name="empty_button">Empty</string>
+    <string name="carpark_text">CarPark</string>
+    <string name="Name_text">Name</string>
+    <string name="CarID_text">Car ID</string>
+    <string name="Brand_text">Brand</string>
+    <string name="Delete_button">Delete</string>
+    <string name="save_button">Save</string>
+    <string name="login_text">Login To CarPark</string>
+    <string name="errorlogin">Username or password is not match</string>
+    <string name="infor_name">Supisara Prasittinawa</string>
+    <string name="idStudent">59160134</string>
 </resources>
