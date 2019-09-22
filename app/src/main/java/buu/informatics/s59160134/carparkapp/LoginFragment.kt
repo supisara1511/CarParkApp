@@ -2,14 +2,13 @@ package buu.informatics.s59160134.carparkapp
 
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import android.widget.Toast.*
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import buu.informatics.s59160134.carparkapp.databinding.FragmentLoginBinding
 import kotlinx.android.synthetic.main.fragment_login.*
 
@@ -42,10 +41,20 @@ class LoginFragment : Fragment() {
             }
 
         }
+        setHasOptionsMenu(true)
         return binding.root
     }
     private fun verifyLogin(usernameInput:String,passwordInput:String):Boolean{
         return usernameInput == username && passwordInput == password
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater?.inflate(R.menu.option_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return NavigationUI.onNavDestinationSelected(item!!, view!!.findNavController()) || super.onOptionsItemSelected(item)
     }
 
 

@@ -4,9 +4,11 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
             app:startDestination="@id/loginFragment">
     <fragment android:id="@+id/loginFragment" android:name="buu.informatics.s59160134.carparkapp.LoginFragment"
-              android:label="LoginFragment">
+              android:label="Login">
         <action android:id="@+id/action_loginFragment_to_carParkFragment" app:destination="@id/carParkFragment2"/>
     </fragment>
     <fragment android:id="@+id/carParkFragment2" android:name="buu.informatics.s59160134.carparkapp.CarParkFragment"
-              android:label="fragment_carpark" tools:layout="@layout/fragment_carpark"/>
+              android:label="CarPark" tools:layout="@layout/fragment_carpark"/>
+    <fragment android:id="@+id/inforFragment" android:name="buu.informatics.s59160134.carparkapp.InforFragment"
+              android:label="InforFragment"/>
 </navigation>
