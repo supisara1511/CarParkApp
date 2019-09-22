@@ -15,7 +15,4 @@
     <string name="errorlogin">Username or password is not match</string>
     <string name="infor_name">Supisara Prasittinawa</string>
     <string name="idStudent">59160134</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
